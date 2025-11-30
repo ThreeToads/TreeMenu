@@ -1,0 +1,6 @@
+{# Simple recursive rendering. Classes: .menu, .menu-item, .active, .expanded #}
+<ul class="tree-menu">
+    {% for node in tree %}
+    {% include "tree_menu/_node.html" with node=node %}
+    {% endfor %}
+</ul>
